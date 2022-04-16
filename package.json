@@ -1,0 +1,31 @@
+{
+  "name": "mango.uz",
+  "version": "0.0.1",
+  "description": "Mango.uz online shopping application backend with graphQl",
+  "main": "src/server.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abror2305/Mango.uz.git"
+  },
+  "keywords": [
+    "Mango.uz"
+  ],
+  "author": "Abror Alisherov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Abror2305/Mango.uz/issues"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "apollo-server-core": "^3.6.7",
+    "apollo-server-express": "^3.6.7",
+    "express": "^4.17.3",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "homepage": "https://github.com/Abror2305/Mango.uz#readme"
+}

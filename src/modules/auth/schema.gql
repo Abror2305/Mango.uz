@@ -1,0 +1,27 @@
+type Query{
+    User: String!
+}
+
+type Mutation{
+    login(input: Login): AuthResponse!
+    register(input: Register): AuthResponse!
+}
+
+input Login{
+    username: String!
+    password: String!
+}
+
+input Register{
+    username: String!
+    password: String!
+    repeat_password: String!
+    contact:String!,
+    email: String!
+}
+
+type AuthResponse{
+    status: Int!
+    message: String!
+    token: String
+}

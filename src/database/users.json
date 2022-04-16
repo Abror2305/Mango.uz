@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "username": "Abror",
+        "password": "Abror20006",
+        "contact": "+998330060523",
+        "email": "abroralisherov90@gmail.com",
+        "isUser": true
+    },
+    {
+        "id": 2,
+        "username": "Abrors",
+        "password": "46f0a681258c2e50957ff79be2b8bfcee68ffb41374b5cf591863e3cfee884ad",
+        "contact": "998330060523",
+        "email": "abroralishernov90@gmail.com",
+        "isUser": true
+    }
+]
