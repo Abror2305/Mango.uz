@@ -65,7 +65,30 @@ export default {
 
             return {
                 status: 200,
-                message: "ok",
+                message: "You are successfully registered",
+                token
+            }
+        },
+        login:(_,{input:{username,password}},{read,userAgent}) =>{
+            username = username?.trim()
+            password = sha256(password?.trim())
+
+            const users = read("users")
+
+            const user = users.find(user => user.username === username && user.password === password)
+
+            if(!user){
+                return {
+                    status: 403,
+                    message: "Invalid username or password"
+                }
+            }
+
+            const token = sign({id: user.id, isUser: user.isUser, userAgent})
+
+            return {
+                status: 200,
+                message: "You are successfully logged in",
                 token
             }
         }
