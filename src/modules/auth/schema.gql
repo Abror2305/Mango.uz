@@ -1,6 +1,6 @@
 type Mutation{
-    login(input: Login): AuthResponse!
-    register(input: Register): AuthResponse!
+    login(input: Login!): AuthResponse!
+    register(input: Register!): AuthResponse!
 }
 
 type AuthResponse{

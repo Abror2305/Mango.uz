@@ -1,6 +1,9 @@
 type Query{
-    products(input: ProductsInp): [Products!]!
+    products(input: ProductsInp): [Products]!
 }
+#type Mutation{
+#    editProduct(id:ID!,categoryId:ID,name:String,price:String,shortDesc:String,longDesc)
+#}
 type Products{
     id:ID!
     categoryId: ID!
@@ -16,4 +19,5 @@ input ProductsInp{
     page: Int
     perPage: Int
     search: String
+    categoryId:ID
 }

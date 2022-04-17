@@ -25,7 +25,8 @@
     "apollo-server-express": "^3.6.7",
     "express": "^4.17.3",
     "joi": "^17.6.0",
-    "jsonwebtoken": "^8.5.1"
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.4"
   },
   "homepage": "https://github.com/Abror2305/Mango.uz#readme"
 }

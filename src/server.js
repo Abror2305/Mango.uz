@@ -4,6 +4,10 @@ import express from 'express';
 import http from 'http';
 import model from './util/model.js'
 import { schema } from './modules/index.js'
+import products from "./Products/index.js";
+import errorHandler from "./util/errorHandler.js";
+import path from "path";
+
 
 async function startApolloServer(schema) {
     const app = express();
@@ -19,6 +23,11 @@ async function startApolloServer(schema) {
         // introspection: true,
         plugins: [ApolloServerPluginDrainHttpServer({ httpServer }),ApolloServerPluginLandingPageGraphQLPlayground()],
     });
+
+    app.use(express.static(path.join(process.cwd(),"src", 'public')));
+    app.use(express.json());
+    app.use(products)
+    app.use(errorHandler)
 
     await server.start();
     server.applyMiddleware({

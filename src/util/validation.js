@@ -9,6 +9,24 @@ export const registerSchema = Joi.object({
     contact: Joi.string().pattern(/^998[389][012345789][0-9]{7}$/)
 })
 
+
+export const productSchema = Joi.object({
+    categoryId: Joi.number().integer().positive().required(),
+    name: Joi.string().min(3).max(50).required(),
+    price: Joi.number().positive().min(1000).required(),
+    shortDesc: Joi.string(),
+    longDesc: Joi.string(),
+})
+
+export const editProductSchema = Joi.object({
+    id: Joi.number().integer().positive().required(),
+    categoryId: Joi.number().integer().positive(),
+    name: Joi.string().min(3).max(50),
+    price: Joi.number().positive().min(1000),
+    shortDesc: Joi.string(),
+    longDesc: Joi.string(),
+})
+
 /**
  *
  * @param token{string}
