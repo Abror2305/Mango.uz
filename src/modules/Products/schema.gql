@@ -1,0 +1,19 @@
+type Query{
+    products(input: ProductsInp): [Products!]!
+}
+type Products{
+    id:ID!
+    categoryId: ID!
+    name: String!
+    price: String!
+    shortDesc: String!
+    longDesc: String!
+    picture: String!
+}
+
+input ProductsInp{
+    id: ID
+    page: Int
+    perPage: Int
+    search: String
+}

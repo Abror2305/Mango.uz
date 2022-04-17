@@ -1,12 +1,13 @@
-type Query{
-    User: String!
-}
-
 type Mutation{
     login(input: Login): AuthResponse!
     register(input: Register): AuthResponse!
 }
 
+type AuthResponse{
+    status: Int!
+    message: String!
+    token: String
+}
 input Login{
     username: String!
     password: String!
@@ -20,8 +21,3 @@ input Register{
     email: String!
 }
 
-type AuthResponse{
-    status: Int!
-    message: String!
-    token: String
-}

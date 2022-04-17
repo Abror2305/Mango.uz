@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Telefonlar"
+    },
+    {
+        "id": 2,
+        "name": "Kompiyuterlar"
+    },
+    {
+        "id": 3,
+        "name": "Kitoblar"
+    },
+    {
+        "id": 4,
+        "name": "Mashina"
+    },
+    {
+        "id": 5,
+        "name": "Uy joy"
+    }
+]

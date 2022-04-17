@@ -2,10 +2,8 @@ import {registerSchema} from "../../util/validation.js";
 import userExists from "../../util/userExist.js";
 import {sign,sha256} from "../../util/hashing.js";
 
+
 export default {
-    Query:{
-        User:() => "Hello"
-    },
     Mutation:{
         register: (_, {input:{username, password, repeat_password, contact, email}},{read,write,userAgent}) => {
 
@@ -45,8 +43,8 @@ export default {
                 })
             }
             const id = users.at(-1)?.id + 1 || 1
-            const isUser = false
-            const token = sign({id, isUser, userAgent})
+            const isAdmin = false
+            const token = sign({id, userAgent})
 
             password = sha256(password)
 
@@ -56,7 +54,7 @@ export default {
                 password,
                 contact,
                 email,
-                isUser
+                isAdmin
             }
 
             users.push(newUser)

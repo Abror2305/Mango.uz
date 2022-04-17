@@ -10,9 +10,10 @@ async function startApolloServer(schema) {
     const httpServer = http.createServer(app);
 
     const server = new ApolloServer({
-        context: ({req,res}) => {
+        context: ({req}) => {
             const userAgent = req.get("user-agent")
-            return {...model,userAgent}
+            const token = req.get("token")
+            return {...model,userAgent,token}
         },
         schema,
         // introspection: true,
