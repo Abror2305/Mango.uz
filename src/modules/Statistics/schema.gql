@@ -1,5 +1,9 @@
 type Query {
   totalMonthlySales(paid:Boolean): Float!
-    mostSoldProduct(limit:Int!): [Product!]!
-    leastSoldProduct(limit:Int!): [Product!]!
+    mostSoldProduct(limit:Int!): [soldProduct!]!
+    leastSoldProduct(limit:Int!): [soldProduct!]!
+}
+type soldProduct {
+  product: Product!
+  count: Int!
 }
