@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "userId": 1,
+        "productId": 1,
+        "isPaid": true,
+        "date": "2022-04-12T13:11:08.552Z"
+    },
+    {
+        "id": 2,
+        "userId": 2,
+        "productId": 2,
+        "isPaid": true,
+        "date": "2022-04-14T13:11:08.552Z"
+    },
+    {
+        "id": 3,
+        "userId": 3,
+        "productId": 3,
+        "isPaid": true,
+        "date": "2022-04-17T13:11:08.552Z"
+    },
+    {
+        "id": 4,
+        "userId": 4,
+        "productId": 4,
+        "isPaid": true,
+        "date": "2022-04-12T13:11:08.552Z"
+    },
+    {
+        "id": 5,
+        "userId": 1,
+        "productId": 5,
+        "isPaid": true,
+        "date": "2022-03-07T13:11:08.552Z"
+    },
+    {
+        "id": 6,
+        "userId": 3,
+        "productId": 6,
+        "isPaid": true,
+        "date": "2022-03-17T13:11:08.552Z"
+    },
+    {
+        "id": 7,
+        "userId": 2,
+        "productId": 7,
+        "isPaid": true,
+        "date": "2022-04-07T13:11:08.552Z"
+    },
+    {
+        "id": 8,
+        "userId": 3,
+        "productId": 6,
+        "isPaid": true,
+        "date": "2022-04-06T13:11:08.552Z"
+    },
+    {
+        "id": 9,
+        "userId": 2,
+        "productId": 5,
+        "isPaid": true,
+        "date": "2022-04-07T13:12:08.552Z"
+    },
+    {
+        "id": 10,
+        "userId": 4,
+        "productId": 1,
+        "isPaid": true,
+        "date": "2022-04-17T13:11:08.552Z"
+    },
+    {
+        "id": 11,
+        "userId": 1,
+        "productId": 1,
+        "isPaid": true,
+        "date": "2022-04-17T19:41:11.471Z"
+    },
+    {
+        "id": 12,
+        "userId": 1,
+        "productId": 2,
+        "isPaid": false,
+        "date": "2022-04-17T19:41:16.336Z"
+    }
+]

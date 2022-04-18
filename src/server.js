@@ -20,7 +20,7 @@ async function startApolloServer(schema) {
             return {...model,userAgent,token}
         },
         schema,
-        // introspection: true,
+        introspection: true,
         plugins: [ApolloServerPluginDrainHttpServer({ httpServer }),ApolloServerPluginLandingPageGraphQLPlayground()],
     });
 

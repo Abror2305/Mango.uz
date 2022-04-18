@@ -26,7 +26,10 @@ const imageUpload = multer({
             cb(null,uniqueSuffix+path.extname(file.originalname))
         },
     }),
-    fileFilter: fileFilterPhoto
+    fileFilter: fileFilterPhoto,
+    limits: {
+        fileSize: 1024 * 1024 * 5
+    }
 })
 
 
